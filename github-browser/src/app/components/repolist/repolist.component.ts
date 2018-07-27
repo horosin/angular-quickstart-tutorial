@@ -16,7 +16,6 @@ export class RepolistComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.title = 'List';
 
     this.github.getRepos()
       .subscribe((repos:Repo[]) => {
