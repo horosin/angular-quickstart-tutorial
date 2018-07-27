@@ -1,0 +1,21 @@
+<table>
+  <thead>
+      <tr>
+          <th>No</th>
+          <th>Name</th>
+          <th>Url</th>
+          <th>Whatchers</th>
+          <th>Issues</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let repo of repos; let i = index">
+          <td>{{i}}</td>
+          <td>{{repo.name}}</td>
+          <td>{{repo.url}}</td>
+          <td>{{repo.watchers_count}}</td>
+          <td>{{repo.open_issues}}</td>
+      </tr>
+      
+  </tbody>
+</table>

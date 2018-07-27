@@ -1,0 +1,19 @@
+<h2>Repository: {{name}}</h2>
+
+<h3>General info</h3>
+<ul>
+  <li>Watchers: {{watchers}}</li>
+  <li>Issues: {{issues}}</li>
+  <li>Url: {{url}}</li>
+</ul>
+
+<h3>Branches</h3>
+<ul>
+  <li *ngFor="let branch of branches; let i = index">{{i}}: {{branch}}</li>
+</ul>
+
+<input #input type="text">
+<button (click)="onClick(input.value)">Create</button>
+
+<h3>Edit repo name</h3>
+<input [(ngModel)]="name" type="text">
